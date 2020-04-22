@@ -350,7 +350,7 @@ while episodes <= max_episodes:
         movecounter += 1
         if playerpos[0] == n-1 and playerpos[1] == n-1: #if reached the end, we're done!
             keepmoving = 'n'
-        if totalreward <= -100*(n**2): #if moving around for too long - make this depend on size of maze 
+        if totalreward <= -500*(n**2): #if moving around for too long - make this depend on size of maze 
             unsolved = 1
             break
 
