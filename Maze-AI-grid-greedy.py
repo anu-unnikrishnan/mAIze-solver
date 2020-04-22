@@ -337,9 +337,11 @@ while episodes <= max_episodes:
     #move through maze until solved/gave up 
     while keepmoving == 'y':
         if episodes <= max_episodes/10:
-            epsilon = 0.8 #exploration 
+            epsilon = 0.8 #more exploration 
+        elif episodes <= 2*max_episodes/10:
+            epsilon = 0.4 #slightly more exploitation 
         else:
-            epsilon = 0 #exploitation 
+            epsilon = 0 #exploitation
         totalreward = move_player(grid, playerpos, totalreward, qtable, visitedcellsrow, visitedcellscol, prizerowarr, prizecolarr, epsilon) #move player 
         if episodes == max_episodes: #show the grid once we're at the final episode 
             os.system("clear")
