@@ -39,7 +39,7 @@ def place_blocks(grid):
                         blockrowarr.append(blockrow)
                         blockcolarr.append(blockcol)
 
-#place (n-1) prizes at random positions in the maze 
+#place n prizes at random positions in the maze 
 def place_prizes(grid):
     prizerowarr = []
     prizecolarr = []
