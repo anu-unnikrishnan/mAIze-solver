@@ -1,6 +1,6 @@
 
 GUIDE TO BUILDING AN AI FOR SOLVING A MAZE.
-----------------------------------------------------
+-------------------------------------------
 
 This repository contains Python code for building an AI that can solve a maze, using q-learning (a type of reinforcement learning).
 
